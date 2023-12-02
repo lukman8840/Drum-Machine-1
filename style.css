@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    background-color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.control {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#power-on-button,
+#power-off-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+#power-on-button:hover, #power-off-button:hover{
+    background: #c0392b;;
+}
+
+#power-off-button:disabled {
+    background-color: #ccc;
+}
+
+.drum {
+    font-size: 50px;
+    padding: 15px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius:100%;
+    outline: none;
+    height: 200px;
+    width: 200px;
+    transition: background-color 0.3s;
+    box-shadow: 1px 1px 1px 5px #fff;
+}
+
+.drum:hover {
+    background-color: #298;
+}
+
+
+.fa-drum,
+.fa-drum-steelpan {
+    font-size: 1.5em;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+@media (max-width: 768px) {
+    .main{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}

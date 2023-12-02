@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Machine</title>
+    <script src="https://kit.fontawesome.com/531e861363.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="drum-sound1" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_1hsf80hpM7yN_lwwd1u.mp3"></audio>
+    <audio id="drum-sound2" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_19zo5dGvs4CK_njr1gm.mp3"></audio>
+    <audio id="drum-sound3" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_19J4lJtUkm8M_kmcvqo.mp3"></audio>
+    <audio id="drum-sound4" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_1gvks5bV65Om_pbbyma.mp3"></audio>
+    <audio id="drum-sound5" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_15pa79ugT5wg_zmz0wq.mp3"></audio>
+    <audio id="drum-sound6" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_19zo5dGvs4CK_njr1gm.mp3"></audio>
+    <audio id="drum-sound7" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_1hsf80hpM7yN_lwwd1u.mp3"></audio>
+    <audio id="drum-sound8" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_19J4lJtUkm8M_kmcvqo.mp3"></audio>
+    <audio id="drum-sound9" src="https://res.cloudinary.com/dnfgsppzf/video/upload/v1701534254/Vocaroo_1gvks5bV65Om_pbbyma.mp3"></audio>
+    <div class="container">
+        <div class="control">
+            <button id="power-on-button" onclick="powerOn()">Power On</button>
+            <button  id="power-off-button" onclick="powerOff()" disabled>Power Off</button >
+            <label for="volume">Volume:</label> 
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1" onchange="updateVolume()" >
+            <span id="volume-display">100%</span>
+        </div>
+        <div class="main" id="drum-buttons">
+            <button class="drum" onclick="playSound('drum-sound1')" id="drum-machine"><i class="fa-solid fa-drum"></i></button>
+            <button class="drum" onclick="playSound('drum-sound2')" id="drum-machine"><i class="fa-solid fa-drum-steelpan"></i></button>
+            <button class="drum" onclick="playSound('drum-sound3')" id="drum-machine"><i class="fa-solid fa-drum"></i></button>
+            <button class="drum" onclick="playSound('drum-sound4')" id="drum-machine"><i class="fa-solid fa-drum-steelpan"></i></button>
+            <button class="drum" onclick="playSound('drum-sound5')" id="drum-machine"><i class="fa-solid fa-drum"></i></button>
+            <button class="drum" onclick="playSound('drum-sound6')" id="drum-machine"><i class="fa-solid fa-drum-steelpan"></i></button>
+            <button class="drum" onclick="playSound('drum-sound7')" id="drum-machine"><i class="fa-solid fa-drum"></i></button>
+            <button class="drum" onclick="playSound('drum-sound8')" id="drum-machine"><i class="fa-solid fa-drum"></i></button>
+            <button class="drum" onclick="playSound('drum-sound9')" id="drum-machine"><i class="fa-solid fa-drum-steelpan"></i></button>  
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
